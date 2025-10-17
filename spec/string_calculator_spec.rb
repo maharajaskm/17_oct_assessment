@@ -6,4 +6,9 @@ RSpec.describe StringCalculator do
       expect(instance.add("")).to be == 0
     end
   end
+  describe "Single string input" do
+    it "should be same value" do
+      expect(instance.add("1")).to be == 1
+    end
+  end
 end
