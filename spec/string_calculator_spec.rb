@@ -21,4 +21,9 @@ RSpec.describe StringCalculator do
       expect(instance.add("1;2;3")).to be == 6
     end
   end
+  describe "Multiple string input with ';' and ',' seperator" do
+    it "should be same value" do
+      expect(instance.add("1,2;3;4")).to be == 10
+    end
+  end
 end
